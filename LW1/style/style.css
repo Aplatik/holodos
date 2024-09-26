@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: left;
+    margin: 10px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+.main-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.menu { 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    height: 350px;
+    background-color: black;
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    margin: 5px 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 50px;
+}
+
+section {
+    padding: 100px;
+    height: 100vh;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    width: 60px;
+    height: 60px;
+    padding-left: 14px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    width: 180px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.label {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    padding-left: 60px;
+}
+
+.menu-item:hover .label {
+    opacity: 1;
+}
+
+.title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.title p {
+    
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+
+.subpoints {
+    margin-top: 15%;
+    padding: 20px;
+    width: 80%;
+    margin-left: 15%;
+}
+
+.subpoint {
+    margin-bottom: 30px;
+}
+
+.subpoint h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.subpoint p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
